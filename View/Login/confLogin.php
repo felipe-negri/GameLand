@@ -47,6 +47,11 @@
         $login->setSenha($_POST['senhaUsuario']);
 
         $loginController->Login($login);
+
+
+        if ($_SESSION['erroLogin'] != NULL) {
+            echo '<script>alert("' . $_SESSION['erroLogin'] . '"); window.location.href="http://localhost/GameLand/View/Login/login.html"</script>';
+        }
         ?>
 
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">

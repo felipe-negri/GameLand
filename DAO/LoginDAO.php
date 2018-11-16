@@ -41,16 +41,15 @@ class LoginDAO {
         $stn->fetch();
         
         if ($id > 0) {            
-            $usuarioLogado = array(
-                'idUsuarioLogado' => $id,
-                'nomeUsuarioLogado' => $name,
-                'emailUsuarioLogado' => $email
-            );
-            
-            $_SESSION['usuario'] = $usuarioLogado;
+            $_SESSION['idUsuarioLogado'] = $id;
+            $_SESSION['nomeUsuarioLogado'] = $name;
+            $_SESSION['emailUsuarioLogado'] = $email;
+            $_SESSION['erroLogin'] = NULL;
         } else {
-            //$_SESSION['error'] = ['erro' => true, 'mensagem' => 'Usuário não encontrado!!!'];
-            header('location: http://localhost/GameLand/View/Login/login.html');
+            $_SESSION['erroLogin'] = 'Usuário não encontrado !!';
+            $_SESSION['idUsuarioLogado'] = NULL;
+            $_SESSION['nomeUsuarioLogado'] = NULL;
+            $_SESSION['emailUsuarioLogado'] = NULL;
         }
     }
 }
