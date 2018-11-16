@@ -3,13 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/xampp/htdocs/GameLand/View/Login/login.html</file>
             <file>file:/C:/xampp/htdocs/GameLand/index.php</file>
-            <file>file:/C:/xampp/htdocs/GameLand/Model/Usuario.php</file>
-            <file>file:/C:/xampp/htdocs/GameLand/View/Cadastro/confCadastro.php</file>
+            <file>file:/C:/xampp/htdocs/GameLand/DAO/LoginDAO.php</file>
+            <file>file:/C:/xampp/htdocs/GameLand/View/Login/confAlteracaoSenha.php</file>
+            <file>file:/C:/xampp/htdocs/GameLand/View/Login/confLogin.php</file>
             <file>file:/C:/xampp/htdocs/GameLand/DataSource/DataSource.php</file>
-            <file>file:/C:/xampp/htdocs/GameLand/DAO/UsuarioDAO.php</file>
-            <file>file:/C:/xampp/htdocs/GameLand/Controller/UsuarioController.php</file>
-            <file>file:/C:/xampp/htdocs/GameLand/View/Cadastro/cadastro.html</file>
+            <file>file:/C:/xampp/htdocs/GameLand/View/Login/alteracaoSenha.html</file>
+            <file>file:/C:/xampp/htdocs/GameLand/Controller/LoginController.php</file>
         </group>
     </open-files>
 </project-private>

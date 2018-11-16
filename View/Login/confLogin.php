@@ -40,9 +40,6 @@
         include '../../Model/Login.php';
         include '../../Controller/LoginController.php';
 
-        $_SESSION['email'] = $_POST['emailUsuario'];
-
-
         $login = new Login();
         $loginController = new LoginController();
 

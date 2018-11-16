@@ -46,7 +46,7 @@
                             <a class="nav-link js-scroll-trigger" href="./View/Contato/contato.html">Contato</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="./View/Login/login.html">Login</a>
+                            <a class="nav-link js-scroll-trigger" href="./View/Login/login.php">Login</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link js-scroll-trigger" href="./View/Cadastro/cadastro.html">cadastre-se</a>
