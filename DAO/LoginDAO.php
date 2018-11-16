@@ -30,6 +30,10 @@ class LoginDAO {
         $stn->bind_param("ss", $email, $senha);
 
         //executa o bind
-        $stn->execute();
+        $result = $stn->execute();
+        
+        while ($row = mysqli_fetch_all($result)) {
+            
+        }
     }
 }
