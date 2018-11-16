@@ -1,0 +1,69 @@
+/* CSS Document */
+
+/*Seleção do Pagamento*/
+.paymentWrap {
+	padding: 50px;
+}
+
+.paymentWrap .paymentBtnGroup {
+	max-width: 800px;
+	margin: auto;
+}
+
+.paymentWrap .paymentBtnGroup .paymentMethod {
+	padding: 40px;
+	box-shadow: none;
+	position: relative;
+}
+
+.paymentWrap .paymentBtnGroup .paymentMethod.active {
+	outline: none !important;
+}
+
+.paymentWrap .paymentBtnGroup .paymentMethod.active .method {
+	border-color: #fbfbfb;
+	outline: none !important;
+	box-shadow: 0px 3px 22px 0px #fbfbfb;
+}
+
+.paymentWrap .paymentBtnGroup .paymentMethod .method {
+	position: absolute;
+	right: 3px;
+	top: 3px;
+	bottom: 3px;
+	left: 3px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	border: 2px solid transparent;
+	transition: all 0.5s;
+}
+
+.paymentWrap .paymentBtnGroup .paymentMethod .method.visa {
+	background-image: url(".../img/cardVisa.jpg");
+}
+
+.paymentWrap .paymentBtnGroup .paymentMethod .method.cardMaster {
+	background-image: url(file:/img/cardAmerican.jpg);
+}
+
+.paymentWrap .paymentBtnGroup .paymentMethod .method.cardAmerican {
+	background-image: url(".../img/cardAmerican.jpg");
+}
+/*
+.paymentWrap .paymentBtnGroup .paymentMethod .method.boleto {
+	background-image: url(".../img/boleto.jpg");
+}
+*/
+.paymentWrap .paymentBtnGroup .paymentMethod .method:hover {
+	border-color: #fbfbfb;
+	outline: none !important;
+}
+
+/*Container*/
+.container-geral{
+	margin: auto;
+	width: 90%;
+	margin-left: 18%;
+	margin-right: 18%;
+}
