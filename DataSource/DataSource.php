@@ -15,9 +15,9 @@ class DataSource {
     }
 
     function __construct($database) {
-        $server = "localhost";
-        $user = "root";
-        $password = "";
+        $server = "den1.mysql2.gear.host";
+        $user = "gameland";
+        $password = "Vf62202_4!Or";
         
         $this->connection = mysqli_connect($server, $user, $password, "gameland");
         
