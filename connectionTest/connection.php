@@ -8,7 +8,11 @@ if (!$link) {
     exit;
 }
 
-mysqli_query($link,'INSERT INTO CONTATO(NOME, EMAIL, ASSUNTO, MENSAGEM) VALUES ("jose"," manuel@gmail.com", "dfsdf", "sdfsdfd");');
+$query = 'INSERT INTO CONTATO(NOME, EMAIL, ASSUNTO, MENSAGEM) VALUES ("jose"," manuel@gmail.com", "dfsdf", "sdfsdfd")';
+
+if($link->query($sql) === TRUE){
+    echo"INSERIU"
+}
 
 echo "Success: A proper connection to MySQL was made!" . PHP_EOL;
 echo "Host information: " . mysqli_get_host_info($link) . PHP_EOL;
