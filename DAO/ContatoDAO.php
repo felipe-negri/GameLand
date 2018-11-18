@@ -21,13 +21,6 @@ class ContatoDAO {
     public function InserirContato($novoContato) {
         $querySql = 'INSERT INTO CONTATO(NOME, EMAIL, ASSUNTO, MENSAGEM) VALUES (?, ?, ?, ?)';
 
-        $link = mysqli_connect("den1.mysql2.gear.host", "gameland", "Vf62202_4!Or");
-        $query = mysqli_query($link,'INSERT INTO CONTATO(NOME, EMAIL, ASSUNTO, MENSAGEM) VALUES (JOSE, felipe.negri43@gmail.com, lfdkf, fduhfdu)');
-
-        mysqli_query($link,'INSERT INTO CONTATO(NOME, EMAIL, ASSUNTO, MENSAGEM) VALUES (JOSE, felipe.negri43@gmail.com, lfdkf, fduhfdu)');
-
-        $query->execute();
-
         //deixa engatilhado a execução da query
         $stn = mysqli_prepare($this->linkConnection->getConnection(), $querySql);
 
