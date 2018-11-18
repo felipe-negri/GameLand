@@ -19,7 +19,7 @@ class DataSource {
         $user = "gameland";
         $password = "Vf62202_4!Or";
         
-        $this->connection = mysqli_connect($server, $user, $password, "gameland");
+        $this->connection = mysqli_connect($server, $user, $password);
         
         if (!$this->connection) {
             die("<h3>Falha na Conexão com o Banco de Dados</h3>");
