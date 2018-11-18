@@ -1,5 +1,5 @@
 <?php
-$link = mysqli_connect("den1.mysql2.gear.host", "gameland", "Vf62202_4!Or");
+$link = mysqli_connect("den1.mysql2.gear.host", "gameland", "Vf62202_4!Or","gameland");
 
 if (!$link) {
     echo "Error: Unable to connect to MySQL." . PHP_EOL;
