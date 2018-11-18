@@ -24,7 +24,9 @@ class ContatoDAO {
         $querySql = 'INSERT INTO CONTATO(NOME, EMAIL, ASSUNTO, MENSAGEM) VALUES (?, ?, ?, ?)';
 
         //deixa engatilhado a execução da query
-        $stn = mysqli_prepare($link, $querySql);
+        $stn = mysqli_prepare($this->linkConnection->getConnection(), $querySql);
+
+        $insertion = mysqli_query($link,$querySql)
 
         $nome = $novoContato->getNome();
         $email = $novoContato->getEmail();
