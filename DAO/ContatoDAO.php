@@ -19,16 +19,21 @@ class ContatoDAO {
     }
 
     public function InserirContato($novoContato) {
-        $querySql = 'INSERT INTO CONTATO(NOME, EMAIL, ASSUNTO, MENSAGEM) VALUES (?, ?, ?, ?)';
+       
 
         //deixa engatilhado a execução da query
-        $stn = mysqli_query($this->linkConnection->getConnection(), $querySql);
+        
 
         $nome = $novoContato->getNome();
         $email = $novoContato->getEmail();
         $assunto = $novoContato->getAssunto();
         $mensagem = $novoContato->getMensagem();
 
+       
+        $querySql = 'INSERT INTO CONTATO(NOME, EMAIL, ASSUNTO, MENSAGEM) VALUES ($nome, $email, $assunto, $mensagem)';
+
+        mysqli_query($this->linkConnection->getConnection(), $querySql);
+        
         //setando valores do VALUES da query
         $stn->bind_param("ssss", $nome, $email, $assunto, $mensagem);
 
