@@ -90,7 +90,7 @@
             <div class="container-fluid p-0">
                 <div class="row no-gutters popup-gallery">
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box-1" href="servicos.html#playstation">
+                        <a class="portfolio-box-1" href="./View/Servicos/servicos.html#playstation">
                             <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
                             <div class="portfolio-box-caption">
                                 <div class="portfolio-box-caption-content">
@@ -103,7 +103,7 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box-2" href="servicos.html#xbox">
+                        <a class="portfolio-box-2" href="./View/Servicos/servicos.html#xbox">
                             <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
                             <div class="portfolio-box-caption">
                                 <div class="portfolio-box-caption-content">
@@ -116,7 +116,7 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box-3" href="servicos.html#switch">
+                        <a class="portfolio-box-3" href="./View/Servicos/servicos.html#switch">
                             <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
                             <div class="portfolio-box-caption">
                                 <div class="portfolio-box-caption-content">
