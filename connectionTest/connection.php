@@ -10,7 +10,7 @@ if (!$link) {
 
 $query = 'INSERT INTO CONTATO(NOME, EMAIL, ASSUNTO, MENSAGEM) VALUES ("jose"," manuel@gmail.com", "dfsdf", "sdfsdfd")';
 
-if($link->query($sql) === TRUE){
+if($link->query($query) === TRUE){
     echo"INSERIU"
 }
 
