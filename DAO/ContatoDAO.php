@@ -10,6 +10,8 @@
 //$_SERVER['DOCUMENT_ROOT'] -> serve para obter o caminho raíz do projeto.
 include($_SERVER['DOCUMENT_ROOT'] . '/GameLand/DataSource/DataSource.php');
 
+$link = mysqli_connect("den1.mysql2.gear.host", "gameland", "Vf62202_4!Or");
+
 class ContatoDAO {
     
     private $linkConnection;
@@ -22,7 +24,7 @@ class ContatoDAO {
         $querySql = 'INSERT INTO CONTATO(NOME, EMAIL, ASSUNTO, MENSAGEM) VALUES (?, ?, ?, ?)';
 
         //deixa engatilhado a execução da query
-        $stn = mysqli_prepare($this->linkConnection->getConnection(), $querySql);
+        $stn = mysqli_prepare($link, $querySql);
 
         $nome = $novoContato->getNome();
         $email = $novoContato->getEmail();
