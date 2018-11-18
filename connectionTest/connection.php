@@ -1,5 +1,6 @@
 <?php
 $con=mysqli_connect("den1.mysql2.gear.host", "gameland", "Vf62202_4!Or","gameland");
+echo('CONECTADO')
 // Check connection
 if (mysqli_connect_errno())
   {
