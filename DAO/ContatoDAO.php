@@ -27,7 +27,7 @@ class ContatoDAO {
         $stn = mysqli_prepare($this->linkConnection->getConnection(), $querySql);
 
         $insertion = mysqli_query($link,$querySql)
-
+        $insertion->execute();
         $nome = $novoContato->getNome();
         $email = $novoContato->getEmail();
         $assunto = $novoContato->getAssunto();
