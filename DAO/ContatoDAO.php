@@ -32,7 +32,12 @@ class ContatoDAO {
        
         $querySql = 'INSERT INTO CONTATO(NOME, EMAIL, ASSUNTO, MENSAGEM) VALUES ($nome, $email, $assunto, $mensagem)';
 
-        mysqli_query($this->linkConnection->getConnection(), $querySql);
+       
+        if(mysqli_query($this->linkConnection->getConnection(), $querySql)){
+            echo "Records inserted successfully.";
+        } else{
+            echo "ERROR: Could not able to execute $querySql. " 
+        }
         
         //setando valores do VALUES da query
         $stn->bind_param("ssss", $nome, $email, $assunto, $mensagem);
